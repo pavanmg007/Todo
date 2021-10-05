@@ -1,200 +1,134 @@
-.parent1{
-    width:100%;
-    height:700px;
-    position: relative;
-    font-family: sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap");
+
+html {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    box-sizing: border-box;
 }
-
-.heading{
-    width:100px;
-    height:100px;
-    position: absolute;
-    top: 125px;
-    left: 300px;
-    font-size: 55px;
-    font-weight:bold;
-}
-
-.format{
-    font-family: Heebo, sans-serif;
-    width:100px;
-    height:100px;
-    position: absolute;
-    top: 118px;
-    left: 460px; 
-    font-size: 55px;
-    font-weight: 0px;
-    opacity: 0.5;
-    font-weight: thin;
-}
-
-.btn{
-    width: 50px;
-    height:50px;
-    position: absolute;
-    top: 145px;
-    left: 815px;
-    color:orangered;
-}
-
-.newList{
-    color: gray;
-}
-
-.text{
-    font-family: Heebo, sans-serif;
-    width: 150px;
-    height:75px;
-    position: absolute;
-    top: 137px;
-    left: 850px;
-    font-size: 35px;
-    opacity: 0.8;
-}
-
-.box1{
-    width: 175px;
-    height: 250px;
-    border: 2px solid red;
-    border-radius: 10px;
-    padding-top: 35px;
-    position: absolute;
-    top: 225px;
-    left: 300px;
-    box-shadow: 2px 2px 5px #222;
-    float: right;
-}
-
-.triptoparis{
-    margin-left:30px;
-    padding-bottom: 8px;
-    border-bottom: 1px solid gray;
-}
-
-.mytodolist{
-    margin-left:25px;
-    border-bottom: 1px solid gray;
-    color:orangered;
-    padding-bottom: 8px;
-
-}
-
-.completedtask{
-    margin-left:25px;
-
-}
-
-input[type=checkbox] {
-    margin-left: 8px;
-    margin-right: 6px;
-    font-size: 54px;
-}
-
-.box2{
-    width: 175px;
-    height: 250px;
-    border: 2px solid red;
-    border-radius: 10px;
-    padding-top: 35px;
-    box-shadow: 2px 2px 5px #222;
-    position: absolute;
-    top: 225px;
-    left: 555px;
-}
-
-.box3{
-    width: 175px;
-    height: 250px;
-    border: 2px solid red;
-    border-radius: 10px;
-    padding-top: 35px;
-    box-shadow: 2px 2px 5px rgb(10, 10, 10);
-    position: absolute;
-    top: 225px;
-    left: 810px;
-}
-
-.parent2{
-    width: 100%;
-    height: 750px;
+body {
     position: relative;
 }
-
-.paris{
-    width: 100%;
-    height: 100px;
-    font-size: 40px;
-    position: absolute;
-    top: 25px;
-    left: 200px;
-    opacity: 0.5;
+.container {
+    max-width: 1000px;
+    margin: 30px;
 }
 
-span:after,
-span:before{
-    content:"\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
-    text-decoration:line-through;
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-a{
-    text-decoration:none;
-    color: orangered;
+.flex {
+    display: flex;
+    align-items: center;
 }
 
-del{
-    color:orangered;
+.gap {
+    gap: 60px;
 }
 
-.btn2{
-    position: absolute;
-    top: 145px;
-    left: 570px;
-    color: orangered;
+.jc-sa {
+    justify-content: space-between;
 }
 
-.back{
-    position: absolute;
-    top: 140px;
-    left: 610px;
-    font-size: 36px;
+.wrap {
+    flex-wrap: wrap;
 }
 
-.box4{
-    width: 300px;
-    height: 300px;
-    border: 2px solid red;
+.title {
+    font-weight: 700;
+    font-size: 60px;
+    color: #000;
+}
+
+.title span {
+    font-weight: 100;
+    color: #707070;
+}
+
+.btn {
+    background: #e74c3c;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.2;
+    color: white;
+    text-align: center;
+    margin-right: .5em;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 300;
+    color: #707070;
+}
+
+.card {
+    max-width: 250px;
+    min-height: 350px;
+    border: 1px solid #e74c3c;
     border-radius: 10px;
-    padding-top: 35px;
-    
-    box-shadow: 2px 2px 5px #222;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 20%);
+}
+
+.inside-space {
+    margin: 20px 0px 10px 30px;
+    padding-bottom: 10px;
+    font-size: 1rem;
+}
+
+.card-title {
+    color: #e74c3c;
+}
+.title-border{
+    border-bottom: 2px groove rgb(218, 218, 218);
+}
+.card-body {
+    margin-right: 15px;
+    font-weight: 400;
+    color: red;
+    text-decoration: line-through #ff0000 solid 3px;
+}
+
+input[type='checkbox'] {
+    width: 25px;
+    height: 20px;
+}
+.blur {
+    filter: blur(5px);
+}
+.card1 {
     position: absolute;
-    top: 250px;
-    left: 475px;
+    background: #fff;
+    min-width: 400px;
+    min-height: 220px;
+    border: 1px solid #e74c3c;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgb(0 0 0 / 20%);
+    top: 30%;
+    right: 50%;
+    transform: translate(50% , 20%);
+    text-align:center;
 }
-
-
-.icon{
-    position:absolute;
-    top: 540px;
-    left: 730px;
-    color: orangered;
-}
-
-.textarea{
-    margin-top: 5px;
-    width: 100px;
-    height: 25px;
+input[type='text']{
+    display: block;
+    border: #e74c3c solid 1px;
     border-radius: 5px;
-    border: 2px solid red;
+    box-shadow: 4px 4px 7px 0px rgb(0 0 0 / 20%);
+    height: 35px;
+    width: 70%;
+    margin: auto;
 }
-
-.task{
-    float:left;
-    margin: 5px 0px;
-    padding-left: -100px;
-}
-
-.label{
-    float:right;
-    /* margin: 5px 0px; */
+.add{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 5px 25px;
+    border-radius: 20px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
 }
